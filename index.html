@@ -7,25 +7,49 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | QR code component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    .card-text-main{
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 120%;
+      color: #1F314F;
+    }
+
+    .card-text{
+      font-size: 15px;
+      letter-spacing: 0.2px;
+      line-height: 140%;
+      color: #68778D;
+    }
+
+    .outfit-font {
+      font-family: "Outfit", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-blue-200 h-screen flex items-center justify-center flex-col">
-  <div class="card w-80 h-auto bg-white flex flex-col items-center justify-center text-center gap-6 p-4">
-    <img src="./images/image-qr-code.png" alt="QR code image" class="w-72 h-72">
-    <div>
-      <h2>Improve your front-end skills by building projects</h2>
-      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+<body class="bg-blue-200 h-screen flex items-center justify-center flex-col outfit-font">
+  <div
+    class="card w-80 h-auto bg-white flex flex-col items-center justify-center text-center gap-6 pt-4 pr-4 pl-4 pb-10 rounded-3xl">
+    <img src="./images/image-qr-code.png" alt="QR code image" class="w-72 h-72 rounded-xl">
+    <div class="p-4">
+      <h2 class="pb-4 card-text-main">Improve your front-end skills by building projects</h2>
+      <p class="card-text">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
     </div>
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/LuisCorreaDv">Luis Correa</a>.
   </div>
 </body>
 </html>
